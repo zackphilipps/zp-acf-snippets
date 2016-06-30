@@ -1,0 +1,19 @@
+{
+  "name": "zp-acf-snippets",
+  "main": "./lib/zp-acf-snippets",
+  "version": "0.1.0",
+  "description": "This is a collection of Atom snippets for the Advanced Custom Fields WordPress plugin.",
+  "keywords": [
+    "wordpress", "acf", "advanced custom fields"
+  ],
+  "activationCommands": {
+    "atom-workspace": "zp-acf-snippets:toggle"
+  },
+  "repository": "https://github.com/atom/zp-acf-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
