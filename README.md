@@ -57,4 +57,4 @@ Snippet | Output
 
 These snippets serve specific purposes.
 
-`acfcreateoptions` Used in `functions.php`, this snippet will output code that will create an multiple options page in ACF 5\. Code should be edited to reflect Option page names.
+`acfcreateoptions` Used in `functions.php`, this snippet will output code that will create multiple options pages in ACF 5\. Code should be edited to reflect Option page names.
