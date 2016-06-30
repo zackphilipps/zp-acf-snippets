@@ -9,7 +9,7 @@
   "activationCommands": {
     "atom-workspace": "zp-acf-snippets:toggle"
   },
-  "repository": "https://github.com/atom/zp-acf-snippets",
+  "repository": "https://github.com/zackphilipps/zp-acf-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
