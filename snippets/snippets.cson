@@ -3,44 +3,44 @@
     'prefix': 'acfcreateoptions'
     'body': """
       // Add ACF Options Page(s)
-      if(function_exists('acf_add_options_page')) {
+      if( function_exists( 'acf_add_options_page' ) ) {
         acf_add_options_page();
-        acf_add_options_sub_page('${1:Header}');
-        acf_add_options_sub_page('${2:Sidebar}');
-        acf_add_options_sub_page('${3:Footer}');
+        acf_add_options_sub_page( '${1:Header}' );
+        acf_add_options_sub_page( '${2:Sidebar}' );
+        acf_add_options_sub_page( '${3:Footer}' );
       }
     """
   'get_field':
     'prefix': 'gf'
-    'body': 'get_field(\'${1:field_name}\');'
+    'body': 'get_field( \'${1:field_name}\' );'
   'get_field_options':
     'prefix': 'gfo'
-    'body': 'get_field(\'${1:field_name}\', \'options\');'
+    'body': 'get_field( \'${1:field_name}\', \'options\' );'
   'get_sub_field':
     'prefix': 'gsf'
-    'body': 'get_sub_field(\'${1:field_name}\');'
+    'body': 'get_sub_field( \'${1:field_name}\' );'
   'get_sub_field_options':
     'prefix': 'gsfo'
-    'body': 'get_sub_field(\'${1:field_name}\', \'options\');'
+    'body': 'get_sub_field( \'${1:field_name}\', \'options\' );'
   'if_get_field':
     'prefix': 'ifgf'
-    'body': 'if(get_field(\'${1:field_name}\')):'
+    'body': 'if( get_field( \'${1:field_name}\' ) ):'
   'if_get_field_options':
     'prefix': 'ifgfo'
-    'body': 'if(get_field(\'${1:field_name}\', \'options\')):'
+    'body': 'if( get_field( \'${1:field_name}\', \'options\' ) ):'
   'if_get_sub_field':
     'prefix': 'ifgsf'
-    'body': 'if(get_sub_field(\'${1:field_name}\')):'
+    'body': 'if( get_sub_field( \'${1:field_name}\' ) ):'
   'if_get_sub_field_options':
     'prefix': 'ifgsfo'
-    'body': 'if(get_sub_field(\'${1:field_name}\', \'options\')):'
+    'body': 'if( get_sub_field( \'${1:field_name}\', \'options\' ) ):'
   'repeater_field':
     'prefix': 'rf'
     'body': """
-      if(have_rows('${1:field_name}')): ?>
+      if( have_rows( '${1:field_name}' ) ): ?>
         <${2:ul}>
-          <?php while(have_rows('${1:field_name}')): the_row(); ?>
-            <${3:li}><?php the_sub_field('${4:sub_field_name}'); ?></${3:li}>
+          <?php while( have_rows( '${1:field_name}' ) ): the_row(); ?>
+            <${3:li}><?php the_sub_field( '${4:sub_field_name}' ); ?></${3:li}>
           <?php endwhile; ?>
         </${2:ul}>
       <?php endif;
@@ -48,29 +48,29 @@
   'repeater_field_options':
     'prefix': 'rfo'
     'body': """
-      if(have_rows('${1:field_name}', 'options')): ?>
+      if( have_rows( '${1:field_name}', 'options' ) ): ?>
         <${2:ul}>
-          <?php while(have_rows('${1:field_name}', 'options')): the_row(); ?>
-            <${3:li}><?php the_sub_field('${4:sub_field_name}', 'options'); ?></${3:li}>
+          <?php while( have_rows( '${1:field_name}', 'options' ) ): the_row(); ?>
+            <${3:li}><?php the_sub_field( '${4:sub_field_name}', 'options' ); ?></${3:li}>
           <?php endwhile; ?>
         </${2:ul}>
       <?php endif;
     """
   'the_field':
     'prefix': 'tf'
-    'body': 'the_field(\'${1:field_name}\');'
+    'body': 'the_field( \'${1:field_name}\' );'
   'the_field_options':
     'prefix': 'tfo'
-    'body': 'the_field(\'${1:field_name}\', \'options\');'
+    'body': 'the_field( \'${1:field_name}\', \'options\' );'
   'the_sub_field':
     'prefix': 'tsf'
-    'body': 'the_sub_field(\'${1:field_name}\');'
+    'body': 'the_sub_field( \'${1:field_name}\' );'
   'the_sub_field_options':
       'prefix': 'tsfo'
-      'body': 'the_sub_field(\'${1:field_name}\', \'options\');'
+      'body': 'the_sub_field( \'${1:field_name}\', \'options\' );'
   'while_has_sub_field':
     'prefix': 'whsf'
-    'body': 'while(has_sub_field(\'${1:field_name}\')):'
+    'body': 'while( has_sub_field( \'${1:field_name}\' ) ):'
   'while_has_sub_field_options':
     'prefix': 'whsfo'
-    'body': 'while(has_sub_field(\'${1:field_name}\', \'options\')):'
+    'body': 'while( has_sub_field( \'${1:field_name}\', \'options\' ) ):'
