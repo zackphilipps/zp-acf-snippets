@@ -1,7 +1,7 @@
 {
   "name": "zp-acf-snippets",
   "main": "./lib/zp-acf-snippets",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "This is a collection of Atom snippets for the Advanced Custom Fields WordPress plugin.",
   "keywords": [
     "wordpress",
